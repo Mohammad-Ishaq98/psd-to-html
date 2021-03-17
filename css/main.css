@@ -1,0 +1,1103 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+/* typography start */
+
+*{
+  margin:0;
+  padding:0;
+  outline:0;
+}
+body{
+  font-family:sans-serif, Arial;
+}
+a{
+  text-decoration:none;
+}
+img{
+  width:100%;
+  height:auto;
+  background: no-repeat;
+}
+ul,ol{
+  list-style-type:none;
+}
+.float_left{
+  float:left;
+}
+.float_right{
+  float:right;
+}
+.clear{
+  overflow:hidden;
+}
+
+.full_wrapper{
+  width:100%;
+}
+.wrapper{
+  width:1150px;
+  margin:0 auto;
+}
+
+/* typography finish */
+
+/*header part css start*/
+.header_bg{
+ background-color: #000000;
+}
+.header_part{
+  height: 50px;
+}
+.header_left{
+  width: 50%;
+}
+.header_left_icon{
+  margin-right: 17px;
+}
+.header_left ul{
+  padding: 13px 0;
+}
+.header_left ul li{
+  float: left;
+  margin-left:50px;
+}
+.header_left ul li a{
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+.header_right{
+  width: 50%;
+  margin-top: -14px;
+}
+.header_icon ul{}
+.header_icon ul li{
+  float: left;
+  margin-right: 30px;
+}
+.header_icon ul li:last-child{
+  margin-right: 21px;
+}
+.header_icon ul li a{
+  color: #fff;
+  font-size: 14px;
+  transition: 2s ease;
+}
+.header_icon ul li a:hover{
+  color: greenyellow;
+}
+.header_search{}
+.header_search_box{
+  width: 228px;
+  height: 22px;
+  padding-left: 8px;
+  border: none;
+  border-radius: 7px;
+}
+/*header part css end*/
+
+/*nav part css start*/
+.nav_bg{}
+.nav_part{
+  height: 80px;
+}
+.logo{
+  width: 35%;
+  margin-top: 12px;
+}
+.logo img{
+  height: 57px;
+  width: 75px;
+}
+.menu{
+  width: 65%;
+  text-align: right;
+  margin-top: 30px;
+}
+.menu ul{
+  margin-right: 130px;
+}
+.menu ul li{
+  display: inline-block;
+  margin-right: 45px;
+}
+.menu ul li:last-child{
+  margin-right: 0;
+}
+.menu ul li a{
+  color: #0D0D0D;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: normal;  
+}
+.menu ul li a:hover{
+  color: #00c3ff;
+}
+/*nav part css end*/
+/*banner css start*/
+.banner_bg{
+  background-image: url('../img/banner_bg.jpg');
+  background-size: cover;
+  height: 390px;
+  position: relative;
+  padding-top: 110px;
+  z-index: 1;
+}
+.banner_bg:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(68,68,68,68,0.3);
+  z-index: -4
+}
+.banner_txt{}
+.banner_txt h4{
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-weight: normal;
+  font-size: 30px;
+}
+.banner_txt h1{
+  font-family: 'Roboto Slab', sans-serif;
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 30px 0 30px 0;
+  padding: 0;
+}
+.banner_txt p{
+  font-family: 'Roboto Salb', sans-serif;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.banner_btn{}
+.banner_btn button{
+  padding: 17px 30px;
+  background: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin-right:14px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.banner_btn button:hover{
+  background:green;
+}
+.banner_caurosel_dootedIcon{}
+.banner_caurosel_dootedIcon ul{
+  transform: translate(50%,44px);
+}
+.banner_caurosel_dootedIcon ul li{
+  height: 10px;
+  width: 10px;
+  background: #fff;
+  border: 1px solid #fff0;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 3px;
+}
+/*banner css end*/
+
+/*about css start*/
+.about_bg{
+  background: #EFEFEF;
+  padding-top: 80px;
+  padding-bottom: 87px;
+}
+.about_left{
+  width: 570px;
+  margin-right: 30px;
+  position: relative;
+}
+.about_left:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  background:rgba(0,0,0,0.7); 
+  width: 100%;
+  height: 100%;
+}
+.about_left a img{}
+.about_video_icon{
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  
+}
+.about_right{
+  width: 550px;  
+}
+.about_right h3{
+  color: #1ca79a;
+  font-family: 'Roboto Salb', sans-serif;
+  font-size: 36px; 
+}
+.about_right p{
+  color: #3c3c3c;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 43px;
+  font-weight: 400;
+}
+.about_right button{
+  padding: 15px 34px;
+  background: #4bd4ae;
+  border: none;
+  color: #fff;
+  transition: .5s all ease;
+}
+.about_right button:hover{
+  cursor: pointer;
+  background: orange;
+  cursor: pointer;
+  background: orange;
+  box-shadow: 0px 0px 11px 2px #c19d9d;
+  text-shadow: 2px 3px 5px #b81616;
+  scale: 1.2; 
+}
+/*about css end*/
+
+/*popular part css start*/
+.popular_bg{
+  background: #fff;
+}
+.popular_content {
+  padding: 80px 0;
+}
+.popular_top h2 {
+  color: #22bcbc;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 48px;
+  padding-bottom: 47px;
+}
+.same_popular_bottom{
+  width: 30%;
+  margin-right: 30px;
+  border: 1px solid #565656;
+}
+.same_popular_bottom:last-child{
+  margin-right: 0px !important;  
+}
+.same_popular_bottom img{}
+.same_popular_content{
+  padding: 0 30px;
+}
+.same_popular_content h4{
+  color: #1ca79a;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+  font-size: 24px;
+  margin-top: 31px;
+  margin-bottom: 24px;
+}
+.same_popular_content p{
+  color: black;
+  font-size: 13px;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 146%;
+  margin-bottom: 28px;
+}
+.same_popular_content img{}
+.same_popular_btn{
+  color: #fff;
+  background: #1ca79a;
+  padding: 11px 36px;
+  cursor: pointer;
+  border: 1px solid #565656;
+  border-radius: 5px;
+  font-family: 'RobotoSlab',sans-serifinherit;
+  margin-top: 5px;
+  margin-bottom: 16px;
+}
+.all_course button{
+  padding: 14px 23px;
+  background: #00ffdbad;
+  border: none;
+  margin: 50px 494px;
+  cursor: pointer;
+}
+/*popular part css finish*/
+
+/*event css start*/
+.event_bg{
+  background: #EFEFEF;
+}
+.event_content{
+  padding: 78px 0px;
+}
+.event_top{}
+.event_top h3{
+  color: #1ca79a;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 48px;
+  padding-bottom: 40px;
+}
+.event_bottom{
+   
+}
+.event_text{
+  padding: 40px 38px;
+  background: #fff;
+  border-style: dashed;
+  box-shadow: 11px 2px 7px 5px #a0a50a;
+  margin-bottom: 20px;
+}
+.event_1{
+ width: 180px;
+ margin-right: 30px;
+}
+.event_1 h2{
+  color: #fff;
+  background: #1ca79a;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+  font-size: 48px;
+}
+.event_1 h4{
+  color: #fff;
+  background: #1ca79a;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+  font-size:24px;
+  padding-bottom: 22px;
+}
+.event_1 p{
+  color: #fff;
+  background: #1ca79a;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+  font-size:18px;
+  margin-top: 7px;
+  padding: 16px 40px;
+}
+.event_2{
+  width: 550px;
+}
+.event_2 h4{
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.event_2 ul{
+  margin-bottom: 22px;
+}
+.event_2 li span{
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 14px;
+  padding-bottom:18px; 
+}
+.event_icon_1{
+  background: url(../img/event_clock.png) no-repeat;
+  background-position: 0px 0px;  
+}
+.event_icon_2{
+  background: url(../img/event_locationl.png) no-repeat;
+  background-position: 0px 2px;
+}
+.event_2 ul li p{
+  margin-left: 30px;
+}
+.event_2 ul li p{
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size:14px; 
+}
+.event_3{
+  width: 300px;
+}
+.event_3 img{}
+.event_btn{}
+.event_btn button{
+  transform: translate(-50%,-5%);
+  margin-left: 50%;
+  margin-top: 5%;
+  padding: 15px 30px;
+  color: #fff;
+  background: aquamarine;
+  border: none;
+  -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+
+
+}
+.event_btn button:hover{
+  background: tomato;
+  cursor: pointer;
+}
+/*event css finish*/
+/*register css start*/
+.register_bg{
+ background: linear-gradient(#000000cf,#000000cf),url(../img/register_bg.jpg) no-repeat;
+ background-size: cover;
+}
+.register_content{
+  padding: 100px 0px;
+}
+.register_text1{
+  width: 501px;
+}
+.register_text1 h2{
+  color: #fff;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.register_text1 p{
+  color: #fff;
+  font-family: 'Opes Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  width: 380px;
+  margin-left: 52px;
+}
+.register_text2{
+  width: 360px;
+  float: right;
+}
+.text2_top{
+  background: #1ca79a;
+  padding: 0px 0px;
+}
+.text2_top h2{
+  color: #fff;
+  font-family: 'Opes Sans', sans-serif;
+  font-weight: 700;
+  font-size: 33px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.text2_top p{
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 12px;
+}
+.text2_bottom{
+  padding: 20px 35px 35px 20px;
+  background: #fff;
+}
+.same_register_input{
+  padding: 16px;
+  width: 97%;
+  color: #fff;
+  background: #1ca79a;
+  border: none;
+  margin-bottom: 10px;
+}
+.register_button{
+  display: block;
+  width: 107.5%;
+  padding: 10px;
+  background: #1CA79A;
+  border: none;
+  margin-top: 8px;
+  cursor: pointer;
+}
+/*register css finish*/
+
+/*axix css start */
+.gallery_content{padding: 50px 0;}
+.gallery_top{
+  text-align: center;
+margin-bottom: 40px;
+position: relative;
+}
+.gallery_top::before {
+    position: absolute;
+    top: 103%;
+    left: 48.5%;
+    content: '';
+    background: red;
+    width: 2%;
+    height: 3px;
+}
+.gallery_top::after {
+    position: absolute;
+    left: 44.5%;
+    top: 100%;
+    background: blue;
+    width: 11%;
+    height: 4px;
+    content: '';
+    z-index: -1;
+    display: block;
+}
+.gallery_top h2{}
+.same_gallery{
+  margin-bottom: 25px;
+}
+.gallery_img{
+  width: 32%;
+  margin-right:5px;
+  display: inline-block;
+}
+.gallery_img img{}
+/*axix css finish*/
+
+
+/*web logo css start*/
+.web_logo_bg{
+  background: url('../img/web_logo_bgl.png');
+  background-size: cover;
+  background-position: center;
+}
+.web_logo_part{
+  margin-left: 10%;
+  padding: 5px 0;
+}
+.same_web_logo{
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  margin-bottom: 36px;
+  margin-top: 30px;
+}
+.same_web_logo h2{}
+.web_logo_color{
+  color: #fff;
+  font-size: 30px;
+}
+.web_logo1, .web_logo2,.web_logo3, .web_logo4, .web_logo5, .web_logo6{
+  width:100px;
+  height:100px;
+  background:#1CA79A;
+  border-radius:50%;
+  line-height:127px;
+  margin-left: 23px;
+  margin-bottom:10px;
+}
+/*web logo css finish*/
+
+/*axix css finish*/
+.axix_blog_bg{
+  background: #efefef;}
+.axix_content{
+}
+.axix_top{}
+.axix_top h2{
+  color: #1ca79a;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  text-align: center;
+  padding-top: 86px;
+  padding-bottom: 49px;
+}
+.axix_bottom{}
+.axix_left{
+  width: 750px;
+  margin-right: 20px;
+  float: left;
+}
+.axix_text{
+  display: flex;
+  border: 1px solid;
+  margin-bottom: 37px;
+  background: #fff;
+}
+.axix_text_left{
+  width: 260px;
+  float: left;
+}
+.axix_text_left img{
+  width: 100%;
+  height: 100%;
+}
+.axix_text_right{
+  width: 490px;
+  float: left;
+  padding: 0px 20px;
+  margin-top: 27px;
+  margin-bottom: 38px;  
+
+}
+.axix_text_right h3{
+  color: #1ca79a;
+  font-size: 24px;
+  font-weight: normal;
+}
+.axix_text_right p{
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.axix_text_right button{
+  padding: 14px 25px;
+  background: #1ca79a;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bolder;
+}
+.axix_btn{}
+.axix_right{
+  width: 360px;
+  float: left;
+  background: #fff;
+  border: 1px solid;
+}
+.axix_left_top{}
+.axix_left_top img{}
+.axix_right_bottom{}
+/*axix css finish*/
+/*axix_vdo css start*/
+.vdo_bg{
+  background: #fff;
+}
+.axix_vdos{}
+.axix_vdo_top{}
+.axix_vdo_top h2{
+  text-align: center;
+  font-size: 48px;
+  color: #1ca79a;
+  padding: 60px 0 25px 0;
+  font-weight: bolder;
+}
+.axix_vdo_bottom{}
+.same_vdos{}
+.vdo_txt:last-child{
+  /*margin-right: 0px*/;
+}
+.vdo_txt{
+  width: 260px;
+  float: left;
+  position: relative;
+  margin-right: 25px;
+}
+
+.axis_vdo_img{}
+.axix_vdo_icon{
+  width: 50px;
+  position: absolute;
+  left: 39%;
+  top: 23%;
+}
+.vdo_txt h4{
+  color: #1ca79a;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;;
+}
+.vdo_txt button{
+  position: absolute;
+  left: 81%;
+  top: 60.5%;
+  background: #fff;
+  border: none;
+  padding: 6px;
+  }
+/*axix_vdo css finish*/
+
+
+/*axix_logo css start*/
+.logo_bg{
+  background:#efefef;
+}
+.logo_section{
+  padding: 80px 0;
+}
+.logo_section a{}
+.logo_section img{
+  width: 100px;
+  margin-right: 85px;
+}
+/*axix_logo css finish*/
+
+/*footer_top css start*/
+/*left*/
+.footer_top_bg{
+  background: #242424;
+  padding: 80px 0;
+  overflow: hidden;
+
+}
+.footer_top{}
+.footer_top_left{
+  width: 270px;
+  margin-right: 60px;
+}
+.footer_top_left h2 , .footer_top_center h3, .footer_top_right h3{
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.footer_top_left ul{
+  margin-bottom: 50px;
+}
+.footer_top_left ul li{
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+}
+.footer_top_left_icon{
+  margin-right: 17px;
+}
+.footer_top_left h3{
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 23px;
+}
+.footer_top_left_social_icon a{
+  margin-right: 23px;
+  color: #fff;
+}
+/*cnter*/
+.footer_top_center{
+  width: 240px;
+  padding-right: 50px;
+}
+{}
+.footer_top_center ul{}
+.footer_top_center li{}
+.footer_top_center li a{
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: #fff;
+}
+.footer_center_icon{
+  margin-right: 10px;
+}
+/*right*/
+.footer_top_right{
+  width: 300px;
+  position: relative;
+}
+.same_footer_left_input{
+  width: 480px;
+  padding: 15px 0 15px 13px;
+  color: #fff;
+  background: transparent;
+  margin-bottom: 10px;
+  border: 2px solid #19ead6;
+}
+
+.submit_btn_holder{}
+.Submit_btn{
+  width: 28px;
+  width: 28px;
+  position: absolute;
+  left: 156%;
+  top: 84.5%;
+  cursor: pointer;
+}
+/*footer_top css finish*/
+
+
+/*footer_bottom css start*/
+.footer_bottom_bg{
+  background: #000000;
+}
+.footer_bottom{
+  padding: 25px 0;
+}
+.footer_bottom_left{}
+.footer_bottom_left p{
+  color: #efefef;
+  font-size: 14px;
+  font-weight: 800;
+}
+.footer_bottom_right{}
+.footer_bottom_right p{
+  color: #efefef;
+  font-size: 14px;
+}
+/*footer_bottom css finish*/
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
